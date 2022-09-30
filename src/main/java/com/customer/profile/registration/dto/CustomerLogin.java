@@ -25,5 +25,11 @@ public class CustomerLogin {
 		this.password = password;
 	}
 
+	public CustomerLogin(int userId, String password) {
+		super();
+		this.userId = userId;
+		this.password = password;
+	}
+
 	
 }
