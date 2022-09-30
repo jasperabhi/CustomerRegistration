@@ -32,10 +32,11 @@ public class CustomerProfileController {
 	}
 
 	
-	  @GetMapping(value="/login") public ResponseEntity<String> login(@RequestBody
-	  CustomerLogin customerLogin) { return new
-	  ResponseEntity<String>(customerLoginService.loginCustomer(customerLogin.
-	  getUserId(), customerLogin.getPassword()),HttpStatus.OK); }
+	  @GetMapping(value="/login") 
+	  public ResponseEntity<String> login(@RequestBody CustomerLogin customerLogin) { 
+		  return new ResponseEntity<String>(customerLoginService.loginCustomer(customerLogin.getUserId(), customerLogin.getPassword()),HttpStatus.OK); 
+		  
+	  }
 	 
 
 }
